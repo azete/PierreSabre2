@@ -1,14 +1,17 @@
 package Personnages;
 
 public class Humain {
-	public String nom;
-	public String boisson;
-	public int argent;
+	private String nom;
+	private String boisson;
+	private int argent;
 
 	public Humain(String nom, String boisson, int argent) {
 		this.nom = nom;
 		this.boisson = boisson;
 		this.argent = argent;
+	}
+	public void setArgent(int money) {
+		argent=money;
 	}
 	public int getArgent() {
 		return argent;
